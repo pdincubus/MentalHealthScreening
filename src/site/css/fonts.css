@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300 900;
+    src: url("/fonts/dm-sans-variable.woff2") format("woff2-variations");
+}

@@ -1,0 +1,2430 @@
+[
+    {
+        "id": "autism-quick",
+        "title": "Autism traits quick screen",
+        "description": "A short self check for social communication and sensory patterns.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Small sounds or details grab my attention more than they do for other people.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "def-agree",
+                        "label": "Definitely agree"
+                    },
+                    {
+                        "value": "slightly-agree",
+                        "label": "Slightly agree"
+                    },
+                    {
+                        "value": "slightly-disagree",
+                        "label": "Slightly disagree"
+                    },
+                    {
+                        "value": "def-disagree",
+                        "label": "Definitely disagree"
+                    }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "I focus on details more than the overall picture.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "def-agree",
+                        "label": "Definitely agree"
+                    },
+                    {
+                        "value": "slightly-agree",
+                        "label": "Slightly agree"
+                    },
+                    {
+                        "value": "slightly-disagree",
+                        "label": "Slightly disagree"
+                    },
+                    {
+                        "value": "def-disagree",
+                        "label": "Definitely disagree"
+                    }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "In groups, following multiple conversations feels hard.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "def-agree",
+                        "label": "Definitely agree"
+                    },
+                    {
+                        "value": "slightly-agree",
+                        "label": "Slightly agree"
+                    },
+                    {
+                        "value": "slightly-disagree",
+                        "label": "Slightly disagree"
+                    },
+                    {
+                        "value": "def-disagree",
+                        "label": "Definitely disagree"
+                    }
+                ]
+            },
+            {
+                "id": "q4",
+                "text": "Switching between tasks or topics feels hard.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "def-agree",
+                        "label": "Definitely agree"
+                    },
+                    {
+                        "value": "slightly-agree",
+                        "label": "Slightly agree"
+                    },
+                    {
+                        "value": "slightly-disagree",
+                        "label": "Slightly disagree"
+                    },
+                    {
+                        "value": "def-disagree",
+                        "label": "Definitely disagree"
+                    }
+                ]
+            },
+            {
+                "id": "q5",
+                "text": "I miss hints or implied meaning in conversation.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "def-agree",
+                        "label": "Definitely agree"
+                    },
+                    {
+                        "value": "slightly-agree",
+                        "label": "Slightly agree"
+                    },
+                    {
+                        "value": "slightly-disagree",
+                        "label": "Slightly disagree"
+                    },
+                    {
+                        "value": "def-disagree",
+                        "label": "Definitely disagree"
+                    }
+                ]
+            },
+            {
+                "id": "q6",
+                "text": "I find facial expressions hard to read.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "def-agree",
+                        "label": "Definitely agree"
+                    },
+                    {
+                        "value": "slightly-agree",
+                        "label": "Slightly agree"
+                    },
+                    {
+                        "value": "slightly-disagree",
+                        "label": "Slightly disagree"
+                    },
+                    {
+                        "value": "def-disagree",
+                        "label": "Definitely disagree"
+                    }
+                ]
+            },
+            {
+                "id": "q7",
+                "text": "I struggle to imagine how a situation seems from someone else’s point of view.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "def-agree",
+                        "label": "Definitely agree"
+                    },
+                    {
+                        "value": "slightly-agree",
+                        "label": "Slightly agree"
+                    },
+                    {
+                        "value": "slightly-disagree",
+                        "label": "Slightly disagree"
+                    },
+                    {
+                        "value": "def-disagree",
+                        "label": "Definitely disagree"
+                    }
+                ]
+            },
+            {
+                "id": "q8",
+                "text": "I notice patterns in things more than other people do.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "def-agree",
+                        "label": "Definitely agree"
+                    },
+                    {
+                        "value": "slightly-agree",
+                        "label": "Slightly agree"
+                    },
+                    {
+                        "value": "slightly-disagree",
+                        "label": "Slightly disagree"
+                    },
+                    {
+                        "value": "def-disagree",
+                        "label": "Definitely disagree"
+                    }
+                ]
+            },
+            {
+                "id": "q9",
+                "text": "New social situations feel stressful or confusing.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "def-agree",
+                        "label": "Definitely agree"
+                    },
+                    {
+                        "value": "slightly-agree",
+                        "label": "Slightly agree"
+                    },
+                    {
+                        "value": "slightly-disagree",
+                        "label": "Slightly disagree"
+                    },
+                    {
+                        "value": "def-disagree",
+                        "label": "Definitely disagree"
+                    }
+                ]
+            },
+            {
+                "id": "q10",
+                "text": "Making new friends feels hard.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "def-agree",
+                        "label": "Definitely agree"
+                    },
+                    {
+                        "value": "slightly-agree",
+                        "label": "Slightly agree"
+                    },
+                    {
+                        "value": "slightly-disagree",
+                        "label": "Slightly disagree"
+                    },
+                    {
+                        "value": "def-disagree",
+                        "label": "Definitely disagree"
+                    }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "binaryKeyed",
+            "agreeValues": [
+                "def-agree",
+                "slightly-agree"
+            ],
+            "disagreeValues": [
+                "slightly-disagree",
+                "def-disagree"
+            ],
+            "keyedIds": [
+                "q1",
+                "q7",
+                "q8",
+                "q10"
+            ],
+            "reverseKeyedIds": [
+                "q2",
+                "q3",
+                "q4",
+                "q5",
+                "q6",
+                "q9"
+            ],
+            "threshold": 6,
+            "maxScore": 10,
+            "positiveText": "Score meets the screen threshold. A GP chat about an autism assessment is worth considering.",
+            "negativeText": "Score is below the screen threshold. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "adhd-quick",
+        "title": "Attention and impulsivity quick screen",
+        "description": "A short self check for attention, organisation, and restlessness over the last 6 months.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "I start tasks, then struggle to finish the last details.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "never",
+                        "label": "Never"
+                    },
+                    {
+                        "value": "rarely",
+                        "label": "Rarely"
+                    },
+                    {
+                        "value": "sometimes",
+                        "label": "Sometimes"
+                    },
+                    {
+                        "value": "often",
+                        "label": "Often"
+                    },
+                    {
+                        "value": "very-often",
+                        "label": "Very often"
+                    }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "I struggle to organise tasks that need planning.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "never",
+                        "label": "Never"
+                    },
+                    {
+                        "value": "rarely",
+                        "label": "Rarely"
+                    },
+                    {
+                        "value": "sometimes",
+                        "label": "Sometimes"
+                    },
+                    {
+                        "value": "often",
+                        "label": "Often"
+                    },
+                    {
+                        "value": "very-often",
+                        "label": "Very often"
+                    }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "I forget appointments or obligations.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "never",
+                        "label": "Never"
+                    },
+                    {
+                        "value": "rarely",
+                        "label": "Rarely"
+                    },
+                    {
+                        "value": "sometimes",
+                        "label": "Sometimes"
+                    },
+                    {
+                        "value": "often",
+                        "label": "Often"
+                    },
+                    {
+                        "value": "very-often",
+                        "label": "Very often"
+                    }
+                ]
+            },
+            {
+                "id": "q4",
+                "text": "I put off tasks that need sustained focus.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "never",
+                        "label": "Never"
+                    },
+                    {
+                        "value": "rarely",
+                        "label": "Rarely"
+                    },
+                    {
+                        "value": "sometimes",
+                        "label": "Sometimes"
+                    },
+                    {
+                        "value": "often",
+                        "label": "Often"
+                    },
+                    {
+                        "value": "very-often",
+                        "label": "Very often"
+                    }
+                ]
+            },
+            {
+                "id": "q5",
+                "text": "When sat for a while, I fidget or feel restless.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "never",
+                        "label": "Never"
+                    },
+                    {
+                        "value": "rarely",
+                        "label": "Rarely"
+                    },
+                    {
+                        "value": "sometimes",
+                        "label": "Sometimes"
+                    },
+                    {
+                        "value": "often",
+                        "label": "Often"
+                    },
+                    {
+                        "value": "very-often",
+                        "label": "Very often"
+                    }
+                ]
+            },
+            {
+                "id": "q6",
+                "text": "I feel driven, like slowing down is hard.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "never",
+                        "label": "Never"
+                    },
+                    {
+                        "value": "rarely",
+                        "label": "Rarely"
+                    },
+                    {
+                        "value": "sometimes",
+                        "label": "Sometimes"
+                    },
+                    {
+                        "value": "often",
+                        "label": "Often"
+                    },
+                    {
+                        "value": "very-often",
+                        "label": "Very often"
+                    }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": {
+                "never": 0,
+                "rarely": 1,
+                "sometimes": 2,
+                "often": 3,
+                "very-often": 4
+            },
+            "threshold": 14,
+            "maxScore": 24,
+            "positiveText": "Score meets the screen threshold. A GP chat about ADHD assessment is worth considering.",
+            "negativeText": "Score is below the screen threshold. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "mood-elevation-quick",
+        "title": "Mood elevation quick screen",
+        "description": "A short self check for periods of elevated or irritable mood and changes in energy.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "s1",
+                "text": "I had a period where I felt unusually high, upbeat, or overly confident.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s2",
+                "text": "I had a period where I felt unusually irritable, with more arguments or snapping.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s3",
+                "text": "I needed much less sleep and still felt full of energy.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s4",
+                "text": "I talked more than usual, or felt pressure to keep talking.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s5",
+                "text": "My thoughts raced, or I jumped between ideas quickly.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s6",
+                "text": "I got distracted more easily than usual.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s7",
+                "text": "I had much more energy than usual.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s8",
+                "text": "I became more active, busy, or productive than usual.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s9",
+                "text": "I became more social than usual, with more calls, messages, or plans.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s10",
+                "text": "My interest in sex increased a lot compared to usual.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s11",
+                "text": "I took risks that later caused problems, such as spending, driving, or big decisions.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s12",
+                "text": "Other people said my behaviour seemed unusual or excessive.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "s13",
+                "text": "I felt more goal driven, with strong urges to start new projects.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "co",
+                "text": "Several of the Yes answers happened in the same period of time.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "yes",
+                        "label": "Yes"
+                    },
+                    {
+                        "value": "no",
+                        "label": "No"
+                    }
+                ]
+            },
+            {
+                "id": "impact",
+                "text": "How much did this affect work, social life, or home life.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "none",
+                        "label": "No problem"
+                    },
+                    {
+                        "value": "minor",
+                        "label": "Minor problem"
+                    },
+                    {
+                        "value": "moderate",
+                        "label": "Moderate problem"
+                    },
+                    {
+                        "value": "serious",
+                        "label": "Serious problem"
+                    }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "mdqLike",
+            "symptomQuestionIds": [
+                "s1",
+                "s2",
+                "s3",
+                "s4",
+                "s5",
+                "s6",
+                "s7",
+                "s8",
+                "s9",
+                "s10",
+                "s11",
+                "s12",
+                "s13"
+            ],
+            "yesValue": "yes",
+            "minYes": 7,
+            "coOccurrenceQuestionId": "co",
+            "impairmentQuestionId": "impact",
+            "impairmentPositiveValues": [
+                "moderate",
+                "serious"
+            ],
+            "positiveText": "Screen meets the threshold. A GP chat about bipolar assessment is worth considering.",
+            "negativeText": "Screen is below the threshold. If episodes affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "phq-9",
+        "title": "PHQ-9",
+        "timeframe": "Over the last 2 weeks",
+        "description": "Depression symptom screener.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Little interest or pleasure in doing things.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "Feeling down, depressed, or hopeless.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "Trouble falling or staying asleep, or sleeping too much.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q4",
+                "text": "Feeling tired or having little energy.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q5",
+                "text": "Poor appetite or overeating.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q6",
+                "text": "Feeling bad about yourself, or that you are a failure, or have let yourself or your family down.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q7",
+                "text": "Trouble concentrating on things, such as reading the newspaper or watching television.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q8",
+                "text": "Moving or speaking so slowly that other people could have noticed. Or the opposite, being so fidgety or restless that you have been moving around a lot more than usual.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q9",
+                "text": "Thoughts that you would be better off dead, or of hurting yourself in some way.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3
+            },
+            "threshold": 10,
+            "maxScore": 27,
+            "positiveText": "Score meets a common review threshold. Book a GP chat about depression symptoms.",
+            "negativeText": "Score is below a common review threshold. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "gad-7",
+        "title": "GAD-7",
+        "timeframe": "Over the last 2 weeks",
+        "description": "General anxiety symptom screener.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Feeling nervous, anxious or on edge.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "Not being able to stop or control worrying.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "Worrying too much about different things.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q4",
+                "text": "Trouble relaxing.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q5",
+                "text": "Being so restless that it is hard to sit still.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q6",
+                "text": "Becoming easily annoyed or irritable.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            },
+            {
+                "id": "q7",
+                "text": "Feeling afraid as if something awful might happen.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Not at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Several days"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Over half the days"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Nearly every day"
+                    }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3
+            },
+            "threshold": 10,
+            "maxScore": 21,
+            "positiveText": "Score meets a common review threshold. Book a GP chat about anxiety symptoms.",
+            "negativeText": "Score is below a common review threshold. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "k10",
+        "title": "K10",
+        "timeframe": "During the last 4 weeks",
+        "description": "Psychological distress screener.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "About how often did you feel tired out for no good reason?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "About how often did you feel nervous?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "About how often did you feel so nervous that nothing could calm you down?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q4",
+                "text": "About how often did you feel hopeless?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q5",
+                "text": "About how often did you feel restless or fidgety?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q6",
+                "text": "About how often did you feel so restless you could not sit still?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q7",
+                "text": "About how often did you feel depressed?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q8",
+                "text": "About how often did you feel that everything was an effort?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q9",
+                "text": "About how often did you feel so sad that nothing could cheer you up?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q10",
+                "text": "About how often did you feel worthless?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": {
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5
+            },
+            "threshold": 22,
+            "maxScore": 50,
+            "positiveText": "Score meets a common distress threshold. Book a GP chat about stress and mood.",
+            "negativeText": "Score is below a common distress threshold. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "k6",
+        "title": "K6",
+        "timeframe": "During the last 30 days",
+        "description": "Short psychological distress screener.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "About how often did you feel nervous?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "About how often did you feel hopeless?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "About how often did you feel restless or fidgety?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q4",
+                "text": "About how often did you feel so depressed that nothing could cheer you up?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q5",
+                "text": "About how often did you feel that everything was an effort?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q6",
+                "text": "About how often did you feel worthless?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "None of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "A little of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Some of the time"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Most of the time"
+                    },
+                    {
+                        "value": "5",
+                        "label": "All of the time"
+                    }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": {
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4,
+                "5": 5
+            },
+            "threshold": 13,
+            "maxScore": 30,
+            "positiveText": "Score meets a common distress threshold. Book a GP chat about stress and mood.",
+            "negativeText": "Score is below a common distress threshold. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "audit-c",
+        "title": "AUDIT-C",
+        "timeframe": "Over the last year",
+        "description": "Alcohol use consumption screener.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "How often do you have a drink containing alcohol?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Never"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Monthly or less"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 to 4 times per month"
+                    },
+                    {
+                        "value": "3",
+                        "label": "2 to 3 times per week"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 or more times per week"
+                    }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "How many units of alcohol do you drink on a typical day when you are drinking?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "0 to 2"
+                    },
+                    {
+                        "value": "1",
+                        "label": "3 to 4"
+                    },
+                    {
+                        "value": "2",
+                        "label": "5 to 6"
+                    },
+                    {
+                        "value": "3",
+                        "label": "7 to 9"
+                    },
+                    {
+                        "value": "4",
+                        "label": "10 or more"
+                    }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "How often have you had 6 or more units if female, or 8 or more if male, on a single occasion in the last year?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Never"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Less than monthly"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Monthly"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Weekly"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Daily or almost daily"
+                    }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+                "4": 4
+            },
+            "threshold": 4,
+            "maxScore": 12,
+            "positiveText": "Score meets a common risk threshold. Book a GP chat about alcohol use.",
+            "negativeText": "Score is below a common risk threshold. If alcohol causes problems, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "dass-21",
+        "title": "DASS-21",
+        "timeframe": "Over the past week",
+        "description": "Depression, anxiety, and stress symptom screener with subscales.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "I found it hard to wind down.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "I was aware of dryness of my mouth.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "I could not seem to experience any positive feeling at all.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q4",
+                "text": "I experienced breathing difficulty (e.g., excessively rapid breathing, breathlessness in the absence of physical exertion).",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q5",
+                "text": "I found it difficult to work up the initiative to do things.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q6",
+                "text": "I tended to over-react to situations.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q7",
+                "text": "I experienced trembling (e.g., in the hands).",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q8",
+                "text": "I felt that I was using a lot of nervous energy.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q9",
+                "text": "I was worried about situations in which I might panic and make a fool of myself.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q10",
+                "text": "I felt that I had nothing to look forward to.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q11",
+                "text": "I found myself getting agitated.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q12",
+                "text": "I found it difficult to relax.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q13",
+                "text": "I felt down-hearted and blue.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q14",
+                "text": "I was intolerant of anything that kept me from getting on with what I was doing.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q15",
+                "text": "I felt I was close to panic.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q16",
+                "text": "I was unable to become enthusiastic about anything.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q17",
+                "text": "I felt I was not worth much as a person.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q18",
+                "text": "I felt that I was rather touchy.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q19",
+                "text": "I was aware of the action of my heart in the absence of physical exertion (e.g., sense of heart rate increase, heart missing a beat).",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q20",
+                "text": "I felt scared without any good reason.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            },
+            {
+                "id": "q21",
+                "text": "I felt that life was meaningless.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    {
+                        "value": "0",
+                        "label": "Did not apply to me at all"
+                    },
+                    {
+                        "value": "1",
+                        "label": "Applied to me to some degree, or some of the time"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Applied to me to a considerable degree, or a good part of the time"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Applied to me very much, or most of the time"
+                    }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "subscaleLikert",
+            "scoreByValue": {
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3
+            },
+            "summaryText": "Subscale scores calculated.",
+            "subscales": [
+                {
+                    "id": "depression",
+                    "title": "Depression",
+                    "questionIds": [
+                        "q3",
+                        "q5",
+                        "q10",
+                        "q13",
+                        "q16",
+                        "q17",
+                        "q21"
+                    ],
+                    "multiplier": 2,
+                    "bands": [
+                        {
+                            "min": 0,
+                            "max": 9,
+                            "label": "Normal"
+                        },
+                        {
+                            "min": 10,
+                            "max": 13,
+                            "label": "Mild"
+                        },
+                        {
+                            "min": 14,
+                            "max": 20,
+                            "label": "Moderate"
+                        },
+                        {
+                            "min": 21,
+                            "max": 27,
+                            "label": "Severe"
+                        },
+                        {
+                            "min": 28,
+                            "max": 42,
+                            "label": "Extremely severe"
+                        }
+                    ]
+                },
+                {
+                    "id": "anxiety",
+                    "title": "Anxiety",
+                    "questionIds": [
+                        "q2",
+                        "q4",
+                        "q7",
+                        "q9",
+                        "q15",
+                        "q19",
+                        "q20"
+                    ],
+                    "multiplier": 2,
+                    "bands": [
+                        {
+                            "min": 0,
+                            "max": 7,
+                            "label": "Normal"
+                        },
+                        {
+                            "min": 8,
+                            "max": 9,
+                            "label": "Mild"
+                        },
+                        {
+                            "min": 10,
+                            "max": 14,
+                            "label": "Moderate"
+                        },
+                        {
+                            "min": 15,
+                            "max": 19,
+                            "label": "Severe"
+                        },
+                        {
+                            "min": 20,
+                            "max": 42,
+                            "label": "Extremely severe"
+                        }
+                    ]
+                },
+                {
+                    "id": "stress",
+                    "title": "Stress",
+                    "questionIds": [
+                        "q1",
+                        "q6",
+                        "q8",
+                        "q11",
+                        "q12",
+                        "q14",
+                        "q18"
+                    ],
+                    "multiplier": 2,
+                    "bands": [
+                        {
+                            "min": 0,
+                            "max": 14,
+                            "label": "Normal"
+                        },
+                        {
+                            "min": 15,
+                            "max": 18,
+                            "label": "Mild"
+                        },
+                        {
+                            "min": 19,
+                            "max": 25,
+                            "label": "Moderate"
+                        },
+                        {
+                            "min": 26,
+                            "max": 33,
+                            "label": "Severe"
+                        },
+                        {
+                            "min": 34,
+                            "max": 42,
+                            "label": "Extremely severe"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

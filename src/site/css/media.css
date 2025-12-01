@@ -1,0 +1,7 @@
+@custom-media --mobile (width < 768px);
+@custom-media --from-tablet (width >= 768px);
+@custom-media --tablet (768px <= width < 1280px);
+@custom-media --until-desktop (width < 1280px);
+@custom-media --desktop (width >= 1280px);
+@custom-media --large-desktop (width >= 1680px);
+@custom-media --reduced-motion (prefers-reduced-motion: reduce);

@@ -1,0 +1,22 @@
+---json
+{
+    "layout": "base.njk",
+    "title": "Mental Health Questionnaires"
+}
+---
+
+<p>
+    These questionnaires are self checks. They do not provide diagnoses.
+</p>
+
+<ul>
+    {% for questionnaire in questionnaires %}
+        <li>
+            <a href="/screening/{{ questionnaire.id }}/">
+                {{ questionnaire.title }}
+            </a>
+
+            {{ questionnaire.description }}
+        </li>
+    {% endfor %}
+</ul>

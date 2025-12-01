@@ -1,0 +1,20 @@
+---json
+{
+    "layout": "base.njk",
+    "eleventyComputed": {
+        "title": "{{ questionnaire.title }}"
+    },
+    "description": "",
+    "pagination": {
+        "data": "questionnaires",
+        "alias": "questionnaire",
+        "size": 1
+    },
+    "permalink": "/screening/{{ questionnaire.id }}/"
+}
+---
+{% from "macros/renderQuestionnaire.njk" import renderQuestionnaire %}
+
+{{ renderQuestionnaire(questionnaire) }}
+
+<script type="module" src="{{ jsPath | default('/js/screening.js') }}"></script>

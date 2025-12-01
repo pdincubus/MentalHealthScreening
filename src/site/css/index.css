@@ -1,0 +1,16 @@
+@layer settings, base, utilities, theme;
+
+@import 'variables' layer(settings);
+@import 'media' layer(settings);
+@import 'fonts' layer(settings);
+
+body {
+    font-family: var(--font);
+    font-size: 16px;
+    margin: 0;
+    padding: var(--space);
+}
+
+h1, h2, h3, h4 {
+    font-weight: var(--fw-black);
+}

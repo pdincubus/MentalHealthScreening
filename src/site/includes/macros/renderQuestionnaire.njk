@@ -1,0 +1,46 @@
+{% macro renderQuestionnaire(questionnaire) %}
+    <p>{{ questionnaire.description }}</p>
+
+    <p>{{ questionnaire.disclaimer }}</p>
+
+    <div class="alert alert--error" id="error-{{ questionnaire.id }}" role="alert" hidden></div>
+
+    <form
+        id="form-{{ questionnaire.id }}"
+        data-questionnaire="{{ questionnaire.id }}"
+        novalidate
+    >
+        {% for q in questionnaire.questions %}
+            <fieldset>
+                <legend>
+                    {{ loop.index }}. {{ q.text }}
+                </legend>
+
+                {% for opt in q.options %}
+                    {% set id = questionnaire.id + '-' + q.id + '-' + opt.value %}
+
+                    <div>
+                        <input
+                            type="radio"
+                            id="{{ id }}"
+                            name="q-{{ q.id }}"
+                            value="{{ opt.value }}"
+                            {% if q.required != false %}required{% endif %}
+                        >
+
+                        <label for="{{ id }}">
+                            {{ opt.label }}
+                        </label>
+
+                    </div>
+                {% endfor %}
+            </fieldset>
+        {% endfor %}
+
+        <button type="submit">
+            Score answers
+        </button>
+    </form>
+
+    <div class="result" id="result-{{ questionnaire.id }}" aria-live="polite" hidden></div>
+{% endmacro %}

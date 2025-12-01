@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script>performance.mark('Head start');</script>
+
+        <meta charset="UTF-8">
+        <title>{{ title | safe }}</title>
+        <meta name="description" content="{{ description }}">
+        <meta name="viewport" content="width=device-width">
+
+        <script async>
+            document.documentElement.classList.remove('no-js');
+            document.documentElement.classList.add('js');
+        </script>
+
+        <script nomodule>
+            document.documentElement.classList.add('is-old-browser');
+        </script>
+
+        <link rel="stylesheet" href="{{ '/css/site.css' | url }}">
+
+        <link rel="preload" href="{{ '/css/site.css' | url }}" as="style">
+
+        <link rel="preload" href="{{ '/fonts/dm-sans-variable.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+
+        {% if siteinfo.environment == 'prod' %}
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": ""}'></script>
+        {% endif %}
+
+        <link rel="canonical" href="{% if permalink %}{{ permalink }}{% else %}{{ settings.domain }}{{ page.url }}{% endif %}">
+
+        <script>
+            performance.mark('Head end');
+            performance.measure('Head time', 'Head start', 'Head end');
+        </script>
+
+    </head>
+
+    <body>
+        <main>
+            <h1>{{ title }}</h1>
+
+            {{ content | safe }}
+        </main>
+
+        <script type="application/json" id="questionnaires-data">
+            {{ questionnaires | dump | safe }}
+        </script>
+    </body>
+</html>
