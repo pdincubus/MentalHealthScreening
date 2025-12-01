@@ -38,6 +38,27 @@ export type SumLikertScoring = {
     negativeText: string
 }
 
+export type SubscaleBand = {
+    min: number
+    max: number
+    label: string
+}
+
+export type SubscaleDef = {
+    id: string
+    title: string
+    questionIds: string[]
+    multiplier?: number
+    bands?: SubscaleBand[]
+}
+
+export type SubscaleLikertScoring = {
+    kind: 'subscaleLikert'
+    scoreByValue: Record<string, number>
+    subscales: SubscaleDef[]
+    summaryText: string
+}
+
 export type MdqLikeScoring = {
     kind: 'mdqLike'
     symptomQuestionIds: string[]
@@ -53,6 +74,7 @@ export type MdqLikeScoring = {
 export type ScoringRule =
     | BinaryKeyedScoring
     | SumLikertScoring
+    | SubscaleLikertScoring
     | MdqLikeScoring
 
 export type QuestionnaireDefinition = {
@@ -60,6 +82,8 @@ export type QuestionnaireDefinition = {
     title: string
     description: string
     disclaimer: string
+    timeframe?: string
+    sourceUrl?: string
     questions: Question[]
     scoring: ScoringRule
 }

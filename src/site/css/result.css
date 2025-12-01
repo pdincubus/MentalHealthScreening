@@ -1,0 +1,15 @@
+.result {
+    border: 2px solid var(--c-neutral-black);
+    padding: var(--space-s);
+    border-radius: var(--br);
+    margin-block-start: var(--space);
+    max-inline-size: var(--max-width);
+}
+
+.result :first-child {
+    margin-block-start: 0;
+}
+
+.result :last-child {
+    margin-block-end: 0;
+}

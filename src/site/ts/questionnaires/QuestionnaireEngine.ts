@@ -7,7 +7,8 @@ import type {
 import {
     scoreBinaryKeyed,
     scoreMdqLike,
-    scoreSumLikert
+    scoreSumLikert,
+    scoreSubscaleLikert
 } from './scoring/index.js'
 
 export class QuestionnaireEngine {
@@ -39,6 +40,17 @@ export class QuestionnaireEngine {
                 maxScore: res.maxScore,
                 summary: res.isPositive ? def.scoring.positiveText : def.scoring.negativeText,
                 details
+            }
+        }
+
+        if (def.scoring.kind === 'subscaleLikert') {
+            const res = scoreSubscaleLikert(def.scoring, answers)
+
+            return {
+                questionnaireId: def.id,
+                isPositive: false,
+                summary: def.scoring.summaryText,
+                details: res.details
             }
         }
 

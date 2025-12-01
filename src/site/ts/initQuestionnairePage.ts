@@ -70,7 +70,7 @@ function renderResult(resultEl: HTMLElement, summary: string, details: string[])
         .join('')
 
     resultEl.innerHTML =
-        '<p>' + escapeHtml(summary) + '</p>' +
+        '<h2>' + escapeHtml(summary) + '</h2>' +
         '<ul>' + safeDetails + '</ul>'
 
     setHidden(resultEl, false)

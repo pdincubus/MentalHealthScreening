@@ -8,10 +8,43 @@
     --fw-extrabold: 800;
     --fw-black: 900;
 
+    --fs-2xl: 4rem;
+    --fs-xl: 3rem;
+    --fs-l: 2rem;
+    --fs-m: 1.5rem;
+    --fs: 1rem;
+    --fs-s: 0.75rem;
+
     --space-xl: 64px;
     --space-l: 48px;
     --space-m: 32px;
     --space: 24px;
     --space-s: 16px;
     --space-xs: 8px;
+    --space-2xs: 4px;
+
+    --br-l: 24px;
+    --br-m: 16px;
+    --br: 8px;
+    --br-s: 4px;
+
+    --c-state-success: hsl(121 100% 42%);
+    --c-state-warning: hsl(27 100% 48%);
+    --c-state-error: hsl(0 100% 38%);
+    --c-state-info: hsl(194 95% 54%);
+
+    --c-state-success-transparent: hsl(121 100% 42% / 0.2);
+    --c-state-warning-transparent: hsl(27 100% 48% / 0.1);
+    --c-state-error-transparent: hsl(0 100% 38% / 0.1);
+    --c-state-info-transparent: hsl(194 95% 54% / 0.3);
+
+    --c-state-success-light: hsl(121 100% 82%);
+    --c-state-warning-light: hsl(27 100% 88%);
+    --c-state-error-light: hsl(0 100% 78%);
+    --c-state-info-light: hsl(194 95% 94%);
+
+    --c-neutral-black: hsl(0deg 0% 0%);
+    --c-neutral-white: hsl(0deg 0% 100%);
+
+    --max-width: 960px;
 }

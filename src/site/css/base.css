@@ -1,0 +1,89 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: var(--space);
+}
+
+h1, h2, h3, h4 {
+    font-weight: var(--fw-black);
+    line-height: 1;
+}
+
+h1 {
+    font-size: var(--fs-2xl);
+    margin-block-end: var(--space-s);
+}
+
+h2, h3, h4 {
+    margin-block-end: var(--space-xs);
+}
+
+h2 {
+    font-size: var(--fs-l);
+}
+
+h3 {
+    font-size: var(--fs-m);
+}
+
+h4 {
+    font-size: var(--fs);
+}
+
+p {
+    margin-block: var(--space-s);
+}
+
+main :first-child {
+    margin-block-start: 0;
+}
+
+main :last-child {
+    margin-block-end: 0;
+}
+
+form {
+    margin: 0;
+    max-inline-size: var(--max-width);
+}
+
+fieldset {
+    border: 2px solid var(--c-neutral-black);
+    padding: var(--space-s);
+    border-radius: var(--br);
+}
+
+fieldset + * {
+    margin-block-start: var(--space);
+}
+
+legend {
+    padding: var(--space-2xs) var(--space-xs);
+    border-radius: var(--br);
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs);
+    background-color: var(--c-neutral-black);
+    color: var(--c-neutral-white);
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid var(--c-neutral-black);
+    background-color: var(--c-state-success);
+    padding: var(--space-xs) var(--space-s);
+    font-size: var(--fs);
+    font-family: inherit;
+    border-radius: var(--br);
+    font-weight: var(--fw-bold);
+    transition: 0.25s background-color ease, 0.25s border-color ease;
+
+    &:hover,
+    &:focus {
+        background-color: var(--c-state-success-light);
+        border-color: var(--c-state-success);
+    }
+}

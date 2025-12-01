@@ -272,8 +272,8 @@
             ],
             "threshold": 6,
             "maxScore": 10,
-            "positiveText": "Score meets the screen threshold. A GP chat about an autism assessment is worth considering.",
-            "negativeText": "Score is below the screen threshold. If symptoms affect daily life, a GP chat still makes sense."
+            "positiveText": "Your score indicates that a GP chat about an autism assessment is worth considering.",
+            "negativeText": "Your score suggest a GP chat right now might not be necessary. However, if symptoms start to affect daily life, a GP chat still makes sense."
         }
     },
     {
@@ -462,8 +462,8 @@
             },
             "threshold": 14,
             "maxScore": 24,
-            "positiveText": "Score meets the screen threshold. A GP chat about ADHD assessment is worth considering.",
-            "negativeText": "Score is below the screen threshold. If symptoms affect daily life, a GP chat still makes sense."
+            "positiveText": "Your score indicates that a GP chat about an ADHD assessment is worth considering.",
+            "negativeText": "Your score suggest a GP chat right now might not be necessary. However, if symptoms start to affect daily life, a GP chat still makes sense."
         }
     },
     {
@@ -746,8 +746,8 @@
                 "moderate",
                 "serious"
             ],
-            "positiveText": "Screen meets the threshold. A GP chat about bipolar assessment is worth considering.",
-            "negativeText": "Screen is below the threshold. If episodes affect daily life, a GP chat still makes sense."
+            "positiveText": "Your score indicates that a GP chat about an bipolar disorder assessment is worth considering.",
+            "negativeText": "Your score suggest a GP chat right now might not be necessary. However, if symptoms start to affect daily life, a GP chat still makes sense."
         }
     },
     {
@@ -984,8 +984,8 @@
             },
             "threshold": 10,
             "maxScore": 27,
-            "positiveText": "Score meets a common review threshold. Book a GP chat about depression symptoms.",
-            "negativeText": "Score is below a common review threshold. If symptoms affect daily life, a GP chat still makes sense."
+            "positiveText": "Your score indicates that a GP chat about a depression assessment is worth considering.",
+            "negativeText": "Your score suggest a GP chat right now might not be necessary. However, if symptoms start to affect daily life, a GP chat still makes sense."
         }
     },
     {
@@ -1174,8 +1174,8 @@
             },
             "threshold": 10,
             "maxScore": 21,
-            "positiveText": "Score meets a common review threshold. Book a GP chat about anxiety symptoms.",
-            "negativeText": "Score is below a common review threshold. If symptoms affect daily life, a GP chat still makes sense."
+            "positiveText": "Your score indicates that a GP chat about your anxiety symptoms is worth considering.",
+            "negativeText": "Your score suggest a GP chat right now might not be necessary. However, if symptoms start to affect daily life, a GP chat still makes sense."
         }
     },
     {
@@ -1477,8 +1477,8 @@
             },
             "threshold": 22,
             "maxScore": 50,
-            "positiveText": "Score meets a common distress threshold. Book a GP chat about stress and mood.",
-            "negativeText": "Score is below a common distress threshold. If symptoms affect daily life, a GP chat still makes sense."
+            "positiveText": "Your score indicates that a GP chat about stress and general mood is worth considering.",
+            "negativeText": "Your score suggest a GP chat right now might not be necessary. However, if symptoms start to affect daily life, a GP chat still makes sense."
         }
     },
     {
@@ -1668,8 +1668,8 @@
             },
             "threshold": 13,
             "maxScore": 30,
-            "positiveText": "Score meets a common distress threshold. Book a GP chat about stress and mood.",
-            "negativeText": "Score is below a common distress threshold. If symptoms affect daily life, a GP chat still makes sense."
+            "positiveText": "Your score indicates that a GP chat about distress is worth considering.",
+            "negativeText": "Your score suggest a GP chat right now might not be necessary. However, if symptoms start to affect daily life, a GP chat still makes sense."
         }
     },
     {
@@ -1775,8 +1775,8 @@
             },
             "threshold": 4,
             "maxScore": 12,
-            "positiveText": "Score meets a common risk threshold. Book a GP chat about alcohol use.",
-            "negativeText": "Score is below a common risk threshold. If alcohol causes problems, a GP chat still makes sense."
+            "positiveText": "Your score indicates that a GP chat about your alcohol use is worth considering.",
+            "negativeText": "Your score suggest a GP chat right now might not be necessary. However, if symptoms start to affect daily life, a GP chat still makes sense."
         }
     },
     {

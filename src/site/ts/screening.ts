@@ -1,23 +1,24 @@
-import type { QuestionnaireDefinition } from './questionnaires/types.js'
-import { initQuestionnairePage } from './initQuestionnairePage.js'
+import type { QuestionnaireDefinition } from './questionnaires/types.js';
+import { initQuestionnairePage } from './initQuestionnairePage.js';
 
 function readJsonFromScript(id: string): QuestionnaireDefinition[] {
-    const el = document.getElementById(id)
+    const el = document.getElementById(id);
+
     if (!el) {
-        return []
+        return [];
     }
 
-    const raw = el.textContent || '[]'
+    const raw = el.textContent || '[]';
 
     try {
-        return JSON.parse(raw) as QuestionnaireDefinition[]
+        return JSON.parse(raw) as QuestionnaireDefinition[];
     } catch {
-        return []
+        return [];
     }
 }
 
-const questionnaires = readJsonFromScript('questionnaires-data')
+const questionnaires = readJsonFromScript('questionnaires-data');
 
 initQuestionnairePage({
     questionnaires
-})
+});
