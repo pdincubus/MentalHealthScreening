@@ -2426,5 +2426,568 @@
                 }
             ]
         }
+    },
+    {
+        "id": "phq-2",
+        "title": "PHQ-2",
+        "timeframe": "Over the last 2 weeks",
+        "description": "Ultra-short depression symptom screen (items 1 and 2 from PHQ-9).",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Little interest or pleasure in doing things.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "Several days" },
+                    { "value": "2", "label": "Over half the days" },
+                    { "value": "3", "label": "Nearly every day" }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "Feeling down, depressed, or hopeless.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "Several days" },
+                    { "value": "2", "label": "Over half the days" },
+                    { "value": "3", "label": "Nearly every day" }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": { "0": 0, "1": 1, "2": 2, "3": 3 },
+            "threshold": 3,
+            "maxScore": 6,
+            "positiveText": "Your score indicates that a GP chat about your mood is worth considering.",
+            "negativeText": "Your score suggests a GP chat right now might not be necessary. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "gad-2",
+        "title": "GAD-2",
+        "timeframe": "Over the last 2 weeks",
+        "description": "Ultra-short general anxiety symptom screen (items 1 and 2 from GAD-7).",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Feeling nervous, anxious or on edge.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "Several days" },
+                    { "value": "2", "label": "Over half the days" },
+                    { "value": "3", "label": "Nearly every day" }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "Not being able to stop or control worrying.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "Several days" },
+                    { "value": "2", "label": "Over half the days" },
+                    { "value": "3", "label": "Nearly every day" }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": { "0": 0, "1": 1, "2": 2, "3": 3 },
+            "threshold": 3,
+            "maxScore": 6,
+            "positiveText": "Your score indicates that a GP chat about anxiety symptoms is worth considering.",
+            "negativeText": "Your score suggests a GP chat right now might not be necessary. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "pc-ptsd-5",
+        "title": "PC-PTSD-5",
+        "timeframe": "In the past month",
+        "description": "Primary care PTSD screen. Answer these only if you have experienced a traumatic event.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Have you had nightmares about the event or thought about the event when you did not want to?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "yes", "label": "Yes" },
+                    { "value": "no", "label": "No" }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "Tried hard not to think about the event or went out of your way to avoid situations that reminded you of the event?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "yes", "label": "Yes" },
+                    { "value": "no", "label": "No" }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "Been constantly on guard, watchful, or easily startled?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "yes", "label": "Yes" },
+                    { "value": "no", "label": "No" }
+                ]
+            },
+            {
+                "id": "q4",
+                "text": "Felt numb or detached from people, activities, or your surroundings?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "yes", "label": "Yes" },
+                    { "value": "no", "label": "No" }
+                ]
+            },
+            {
+                "id": "q5",
+                "text": "Felt guilty or unable to stop blaming yourself or others for the event or problems the event caused?",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "yes", "label": "Yes" },
+                    { "value": "no", "label": "No" }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": { "no": 0, "yes": 1 },
+            "threshold": 3,
+            "maxScore": 5,
+            "positiveText": "Your score indicates that a GP chat about trauma symptoms is worth considering.",
+            "negativeText": "Your score suggests a GP chat right now might not be necessary. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "pcl-5",
+        "title": "PCL-5",
+        "timeframe": "In the past month",
+        "description": "PTSD symptom checklist.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Repeated, disturbing, and unwanted memories of the stressful experience.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "Repeated, disturbing dreams of the stressful experience.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "Suddenly feeling or acting as if the stressful experience were actually happening again (as if you were actually back there reliving it).",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q4",
+                "text": "Feeling very upset when something reminded you of the stressful experience.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q5",
+                "text": "Having strong physical reactions when something reminded you of the stressful experience (for example, heart pounding, trouble breathing, sweating).",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q6",
+                "text": "Avoiding memories, thoughts, or feelings related to the stressful experience.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q7",
+                "text": "Avoiding external reminders of the stressful experience (for example, people, places, conversations, activities, objects, or situations).",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q8",
+                "text": "Trouble remembering important parts of the stressful experience.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q9",
+                "text": "Having strong negative beliefs about yourself, other people, or the world (for example, having thoughts such as: I am bad, there is something seriously wrong with me, no one can be trusted, the world is completely dangerous).",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q10",
+                "text": "Blaming yourself or someone else for the stressful experience or what happened after it.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q11",
+                "text": "Having strong negative feelings such as fear, horror, anger, guilt, or shame.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q12",
+                "text": "Loss of interest in activities that you used to enjoy.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q13",
+                "text": "Feeling distant or cut off from other people.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q14",
+                "text": "Trouble experiencing positive feelings (for example, being unable to feel happiness or have loving feelings for people close to you).",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q15",
+                "text": "Irritable behaviour, angry outbursts, or acting aggressively.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q16",
+                "text": "Taking too many risks or doing things that could cause you harm.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q17",
+                "text": "Being “superalert” or watchful or on guard.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q18",
+                "text": "Feeling jumpy or easily startled.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q19",
+                "text": "Having difficulty concentrating.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            },
+            {
+                "id": "q20",
+                "text": "Trouble falling or staying asleep.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Not at all" },
+                    { "value": "1", "label": "A little bit" },
+                    { "value": "2", "label": "Moderately" },
+                    { "value": "3", "label": "Quite a bit" },
+                    { "value": "4", "label": "Extremely" }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": { "0": 0, "1": 1, "2": 2, "3": 3, "4": 4 },
+            "threshold": 33,
+            "maxScore": 80,
+            "positiveText": "Your score indicates that a GP chat about trauma symptoms is worth considering.",
+            "negativeText": "Your score suggests a GP chat right now might not be necessary. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "rosenberg-low-self-esteem",
+        "title": "Rosenberg Self-Esteem Scale (low self-esteem screen)",
+        "timeframe": "How you feel in general",
+        "description": "Scores here measure low self-esteem risk. Higher scores mean lower self-esteem.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "On the whole, I am satisfied with myself.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "3", "label": "Strongly disagree" },
+                    { "value": "2", "label": "Disagree" },
+                    { "value": "1", "label": "Agree" },
+                    { "value": "0", "label": "Strongly agree" }
+                ]
+            },
+            {
+                "id": "q2",
+                "text": "At times I think I am no good at all.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Strongly disagree" },
+                    { "value": "1", "label": "Disagree" },
+                    { "value": "2", "label": "Agree" },
+                    { "value": "3", "label": "Strongly agree" }
+                ]
+            },
+            {
+                "id": "q3",
+                "text": "I feel that I have a number of good qualities.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "3", "label": "Strongly disagree" },
+                    { "value": "2", "label": "Disagree" },
+                    { "value": "1", "label": "Agree" },
+                    { "value": "0", "label": "Strongly agree" }
+                ]
+            },
+            {
+                "id": "q4",
+                "text": "I am able to do things as well as most other people.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "3", "label": "Strongly disagree" },
+                    { "value": "2", "label": "Disagree" },
+                    { "value": "1", "label": "Agree" },
+                    { "value": "0", "label": "Strongly agree" }
+                ]
+            },
+            {
+                "id": "q5",
+                "text": "I feel I do not have much to be proud of.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Strongly disagree" },
+                    { "value": "1", "label": "Disagree" },
+                    { "value": "2", "label": "Agree" },
+                    { "value": "3", "label": "Strongly agree" }
+                ]
+            },
+            {
+                "id": "q6",
+                "text": "I certainly feel useless at times.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Strongly disagree" },
+                    { "value": "1", "label": "Disagree" },
+                    { "value": "2", "label": "Agree" },
+                    { "value": "3", "label": "Strongly agree" }
+                ]
+            },
+            {
+                "id": "q7",
+                "text": "I feel that I'm a person of worth, at least on an equal plane with others.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "3", "label": "Strongly disagree" },
+                    { "value": "2", "label": "Disagree" },
+                    { "value": "1", "label": "Agree" },
+                    { "value": "0", "label": "Strongly agree" }
+                ]
+            },
+            {
+                "id": "q8",
+                "text": "I wish I could have more respect for myself.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Strongly disagree" },
+                    { "value": "1", "label": "Disagree" },
+                    { "value": "2", "label": "Agree" },
+                    { "value": "3", "label": "Strongly agree" }
+                ]
+            },
+            {
+                "id": "q9",
+                "text": "All in all, I am inclined to feel that I am a failure.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "0", "label": "Strongly disagree" },
+                    { "value": "1", "label": "Disagree" },
+                    { "value": "2", "label": "Agree" },
+                    { "value": "3", "label": "Strongly agree" }
+                ]
+            },
+            {
+                "id": "q10",
+                "text": "I take a positive attitude toward myself.",
+                "type": "single",
+                "required": true,
+                "options": [
+                    { "value": "3", "label": "Strongly disagree" },
+                    { "value": "2", "label": "Disagree" },
+                    { "value": "1", "label": "Agree" },
+                    { "value": "0", "label": "Strongly agree" }
+                ]
+            }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": { "0": 0, "1": 1, "2": 2, "3": 3 },
+            "threshold": 15,
+            "maxScore": 30,
+            "positiveText": "Your score indicates low self-esteem risk. A GP chat or talking-therapy referral is worth considering if this affects daily life.",
+            "negativeText": "Your score suggests low self-esteem risk is lower. If this affects daily life, support still makes sense."
+        }
     }
 ]
