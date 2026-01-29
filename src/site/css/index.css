@@ -9,3 +9,4 @@
 
 @import 'alert' layer(utilities);
 @import 'result' layer(utilities);
+@import 'dashboard' layer(utilities);

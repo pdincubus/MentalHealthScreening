@@ -4,6 +4,7 @@ import type {
 } from './questionnaires/types.js'
 
 import { QuestionnaireEngine } from './questionnaires/QuestionnaireEngine.js'
+import { getStoredAnswers, getStoredResult, saveResult } from './storage.js'
 
 type InitOptions = {
     questionnaires: QuestionnaireDefinition[]
@@ -88,8 +89,30 @@ function clearMessages(parts: FormParts): void {
     setHidden(parts.error, true)
 }
 
+function applySavedAnswers(def: QuestionnaireDefinition, form: HTMLFormElement, answers: Answers): void {
+    for (const q of def.questions) {
+        const value = answers[q.id]
+        if (value == null) continue
+        const name = 'q-' + q.id
+        const input = form.querySelector<HTMLInputElement>(`input[name="${name}"][value="${CSS.escape(value)}"]`)
+        if (input) {
+            input.checked = true
+        }
+    }
+}
+
 function initForm(def: QuestionnaireDefinition, parts: FormParts): void {
     const engine = new QuestionnaireEngine()
+
+    const savedAnswers = getStoredAnswers(def.id)
+    if (savedAnswers) {
+        applySavedAnswers(def, parts.form, savedAnswers)
+    }
+
+    const savedResult = getStoredResult(def.id)
+    if (savedResult) {
+        renderResult(parts.result, savedResult.result.summary, savedResult.result.details)
+    }
 
     parts.form.addEventListener('change', () => {
         clearMessages(parts)
@@ -109,6 +132,8 @@ function initForm(def: QuestionnaireDefinition, parts: FormParts): void {
         const score = engine.score(def, answers)
         renderResult(parts.result, score.summary, score.details)
         parts.result.focus()
+
+        saveResult(def.id, { answers, result: score })
     })
 }
 
