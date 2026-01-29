@@ -63,9 +63,13 @@ function render(): void {
             const summary = escapeHtml(data.result.summary)
             const date = formatDate(data.completedAt)
             const url = `/screening/${encodeURIComponent(id)}/`
+            const levelBadge =
+                'level' in data.result && data.result.level && data.result.level !== 'none'
+                    ? `<span class="dashboard-card__level">${escapeHtml(data.result.level)}</span>`
+                    : ''
             return `
         <article class="dashboard-card">
-            <h2 class="dashboard-card__title">${title}</h2>
+            <h2 class="dashboard-card__title">${title}${levelBadge}</h2>
             <p class="dashboard-card__summary">${summary}</p>
             <p class="dashboard-card__meta">Completed ${escapeHtml(date)}</p>
             <a href="${escapeHtml(url)}" class="dashboard-card__link">Take again</a>

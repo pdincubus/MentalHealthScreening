@@ -13,3 +13,29 @@
 .result :last-child {
     margin-block-end: 0;
 }
+
+.result__level {
+    font-size: var(--fs-s);
+    margin-block-end: var(--space-s);
+}
+
+.result__level-label {
+    font-weight: 600;
+}
+
+.result-crisis {
+    margin-block-start: var(--space-m);
+    padding: var(--space-m);
+    background: var(--c-alert-error-bg, #f8d7da);
+    border: 2px solid var(--c-alert-error, #dc3545);
+    border-radius: var(--br);
+}
+
+.result-crisis__text {
+    margin: 0;
+    font-size: var(--fs-l);
+}
+
+.result-crisis__text a {
+    text-decoration: underline;
+}

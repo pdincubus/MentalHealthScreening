@@ -1,6 +1,8 @@
 import type {
     Answers,
-    QuestionnaireDefinition
+    CrisisResource,
+    QuestionnaireDefinition,
+    QuestionnaireResult
 } from './questionnaires/types.js'
 
 import { QuestionnaireEngine } from './questionnaires/QuestionnaireEngine.js'
@@ -34,9 +36,33 @@ function setHidden(el: HTMLElement, hidden: boolean): void {
     el.removeAttribute('hidden')
 }
 
-function readAnswers(def: QuestionnaireDefinition, form: HTMLFormElement): { answers: Answers, missing: string[] } {
+/** Which question ids are visible given current answers (branching). */
+function getVisibleQuestionIds(def: QuestionnaireDefinition, form: HTMLFormElement): Set<string> {
+    const visible = new Set<string>()
+    const answers: Record<string, string> = {}
+    for (const q of def.questions) {
+        const input = form.querySelector<HTMLInputElement>(`input[name="q-${q.id}"]:checked`)
+        if (input) answers[q.id] = input.value
+    }
+    for (const q of def.questions) {
+        if (!q.showWhen) {
+            visible.add(q.id)
+            continue
+        }
+        const refValue = answers[q.showWhen.questionId]
+        if (refValue === q.showWhen.value) visible.add(q.id)
+    }
+    return visible
+}
+
+function readAnswers(
+    def: QuestionnaireDefinition,
+    form: HTMLFormElement,
+    visibleIds?: Set<string>
+): { answers: Answers; missing: string[] } {
     const answers: Answers = {}
     const missing: string[] = []
+    const onlyVisible = visibleIds != null
 
     for (const q of def.questions) {
         const name = 'q-' + q.id
@@ -44,7 +70,8 @@ function readAnswers(def: QuestionnaireDefinition, form: HTMLFormElement): { ans
         const checked = getEl<HTMLInputElement>(selector, form)
 
         if (!checked) {
-            if (q.required !== false) {
+            const isVisible = !onlyVisible || visibleIds!.has(q.id)
+            if (isVisible && q.required !== false) {
                 missing.push(q.id)
             }
             continue
@@ -65,15 +92,38 @@ function escapeHtml(str: string): string {
         .split("'").join('&#39;')
 }
 
-function renderResult(resultEl: HTMLElement, summary: string, details: string[]): void {
-    const safeDetails = details
+function renderCrisisBlock(crisis: CrisisResource): string {
+    const label = crisis.label ? escapeHtml(crisis.label) + ': ' : ''
+    const line = escapeHtml(crisis.line)
+    const link = crisis.url
+        ? '<a href="' + escapeHtml(crisis.url) + '">' + line + '</a>'
+        : line
+    return (
+        '<div class="result-crisis" role="alert">' +
+        '<p class="result-crisis__text"><strong>' + label + link + '</strong></p>' +
+        '</div>'
+    )
+}
+
+function renderResult(
+    resultEl: HTMLElement,
+    result: QuestionnaireResult,
+    crisisResource?: CrisisResource
+): void {
+    const details = result.details
         .map((d) => '<li>' + escapeHtml(d) + '</li>')
         .join('')
 
-    resultEl.innerHTML =
-        '<h2>' + escapeHtml(summary) + '</h2>' +
-        '<ul>' + safeDetails + '</ul>'
+    let html = '<h2>' + escapeHtml(result.summary) + '</h2>'
+    if (result.kind === 'triage' && result.level !== 'none') {
+        html += '<p class="result__level"><span class="result__level-label">Level:</span> ' + escapeHtml(result.level) + '</p>'
+    }
+    html += '<ul>' + details + '</ul>'
+    if (result.kind === 'triage' && result.showCrisis && crisisResource) {
+        html += renderCrisisBlock(crisisResource)
+    }
 
+    resultEl.innerHTML = html
     setHidden(resultEl, false)
 }
 
@@ -101,6 +151,18 @@ function applySavedAnswers(def: QuestionnaireDefinition, form: HTMLFormElement, 
     }
 }
 
+/** Toggle visibility of conditional fieldsets (branching). */
+function updateBranchingVisibility(def: QuestionnaireDefinition, form: HTMLFormElement): void {
+    if (def.flow !== 'branching') return
+    const visibleIds = getVisibleQuestionIds(def, form)
+    const fieldsets = form.querySelectorAll<HTMLFieldSetElement>('[data-question-id][data-show-when-question]')
+    for (const fs of fieldsets) {
+        const qid = fs.dataset.questionId
+        if (!qid) continue
+        setHidden(fs, !visibleIds.has(qid))
+    }
+}
+
 function initForm(def: QuestionnaireDefinition, parts: FormParts): void {
     const engine = new QuestionnaireEngine()
 
@@ -108,13 +170,15 @@ function initForm(def: QuestionnaireDefinition, parts: FormParts): void {
     if (savedAnswers) {
         applySavedAnswers(def, parts.form, savedAnswers)
     }
+    updateBranchingVisibility(def, parts.form)
 
     const savedResult = getStoredResult(def.id)
     if (savedResult) {
-        renderResult(parts.result, savedResult.result.summary, savedResult.result.details)
+        renderResult(parts.result, savedResult.result, def.crisisResource)
     }
 
     parts.form.addEventListener('change', () => {
+        updateBranchingVisibility(def, parts.form)
         clearMessages(parts)
     })
 
@@ -122,18 +186,19 @@ function initForm(def: QuestionnaireDefinition, parts: FormParts): void {
         e.preventDefault()
         clearMessages(parts)
 
-        const { answers, missing } = readAnswers(def, parts.form)
+        const visibleIds = def.flow === 'branching' ? getVisibleQuestionIds(def, parts.form) : undefined
+        const { answers, missing } = readAnswers(def, parts.form, visibleIds)
         if (missing.length) {
             renderError(parts.error)
             parts.error.focus()
             return
         }
 
-        const score = engine.score(def, answers)
-        renderResult(parts.result, score.summary, score.details)
+        const result = engine.score(def, answers)
+        renderResult(parts.result, result, def.crisisResource)
         parts.result.focus()
 
-        saveResult(def.id, { answers, result: score })
+        saveResult(def.id, { answers, result }, { storeAnswers: def.storeAnswers !== false })
     })
 }
 

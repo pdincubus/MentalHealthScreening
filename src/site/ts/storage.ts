@@ -1,11 +1,12 @@
-import type { Answers, ScoreResult } from './questionnaires/types.js'
+import type { Answers, QuestionnaireResult } from './questionnaires/types.js'
 
 const STORAGE_KEY = 'mh-screening-results'
 
 export type StoredResult = {
     completedAt: string
-    answers: Answers
-    result: ScoreResult
+    /** Omitted when questionnaire has storeAnswers: false (e.g. C-SSRS). */
+    answers?: Answers
+    result: QuestionnaireResult
 }
 
 export type StoredResults = Record<string, StoredResult>
@@ -34,7 +35,7 @@ export function getStoredResults(): StoredResults {
     return readRaw()
 }
 
-/** Last saved answers for a questionnaire (for pre-filling the form) */
+/** Last saved answers for a questionnaire (for pre-filling the form). Null if not stored (e.g. sensitive). */
 export function getStoredAnswers(questionnaireId: string): Answers | null {
     const all = readRaw()
     const entry = all[questionnaireId]
@@ -47,15 +48,17 @@ export function getStoredResult(questionnaireId: string): StoredResult | null {
     return all[questionnaireId] ?? null
 }
 
-/** Save completed answers and result for a questionnaire */
+/** Save completed result for a questionnaire. Answers are stored only when storeAnswers is true. */
 export function saveResult(
     questionnaireId: string,
-    payload: { answers: Answers; result: ScoreResult }
+    payload: { answers: Answers; result: QuestionnaireResult },
+    options?: { storeAnswers?: boolean }
 ): void {
+    const storeAnswers = options?.storeAnswers !== false
     const all = readRaw()
     all[questionnaireId] = {
         completedAt: new Date().toISOString(),
-        answers: payload.answers,
+        ...(storeAnswers ? { answers: payload.answers } : {}),
         result: payload.result
     }
     write(all)

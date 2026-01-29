@@ -2989,5 +2989,146 @@
             "positiveText": "Your score indicates low self-esteem risk. A GP chat or talking-therapy referral is worth considering if this affects daily life.",
             "negativeText": "Your score suggests low self-esteem risk is lower. If this affects daily life, support still makes sense."
         }
+    },
+    {
+        "id": "ces-d",
+        "title": "CES-D",
+        "timeframe": "During the past week",
+        "description": "Center for Epidemiologic Studies Depression Scale. Depression symptom screener.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "sourceUrl": "https://arc.psych.wisc.edu/self-report/center-for-epidemiologic-studies-depression-scale-cesd/",
+        "questions": [
+            { "id": "q1", "text": "I was bothered by things that usually don't bother me.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q2", "text": "I did not feel like eating; my appetite was poor.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q3", "text": "I felt that I could not shake off the blues even with help from my family or friends.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q4", "text": "I felt I was just as good as other people.", "type": "single", "required": true, "options": [{ "value": "r0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "r1", "label": "Some or a little of the time (1–2 days)" }, { "value": "r2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "r3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q5", "text": "I had trouble keeping my mind on what I was doing.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q6", "text": "I felt depressed.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q7", "text": "I felt that everything I did was an effort.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q8", "text": "I felt hopeful about the future.", "type": "single", "required": true, "options": [{ "value": "r0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "r1", "label": "Some or a little of the time (1–2 days)" }, { "value": "r2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "r3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q9", "text": "I thought my life had been a failure.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q10", "text": "I felt fearful.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q11", "text": "My sleep was restless.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q12", "text": "I was happy.", "type": "single", "required": true, "options": [{ "value": "r0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "r1", "label": "Some or a little of the time (1–2 days)" }, { "value": "r2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "r3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q13", "text": "I talked less than usual.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q14", "text": "I felt lonely.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q15", "text": "People were unfriendly.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q16", "text": "I enjoyed life.", "type": "single", "required": true, "options": [{ "value": "r0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "r1", "label": "Some or a little of the time (1–2 days)" }, { "value": "r2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "r3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q17", "text": "I had crying spells.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q18", "text": "I felt sad.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q19", "text": "I felt that people dislike me.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] },
+            { "id": "q20", "text": "I could not get \"going.\"", "type": "single", "required": true, "options": [{ "value": "0", "label": "Rarely or none of the time (less than 1 day)" }, { "value": "1", "label": "Some or a little of the time (1–2 days)" }, { "value": "2", "label": "Occasionally or a moderate amount (3–4 days)" }, { "value": "3", "label": "Most or all of the time (5–7 days)" }] }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": { "0": 0, "1": 1, "2": 2, "3": 3, "r0": 3, "r1": 2, "r2": 1, "r3": 0 },
+            "threshold": 16,
+            "maxScore": 60,
+            "positiveText": "Your score indicates that a GP chat about a depression assessment is worth considering.",
+            "negativeText": "Your score suggests a GP chat right now might not be necessary. However, if symptoms start to affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "asrs",
+        "title": "WHO ASRS v1.1 (6-item)",
+        "description": "Adult ADHD self-report screener. Part A of the WHO ASRS.",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "sourceUrl": "https://www.hcp.med.harvard.edu/ncs/asrs.php",
+        "questions": [
+            { "id": "q1", "text": "How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?", "type": "single", "required": true, "options": [{ "value": "never", "label": "Never" }, { "value": "rarely", "label": "Rarely" }, { "value": "sometimes", "label": "Sometimes" }, { "value": "often", "label": "Often" }, { "value": "very-often", "label": "Very Often" }] },
+            { "id": "q2", "text": "How often do you have difficulty getting things in order when you have to do a task that requires organization?", "type": "single", "required": true, "options": [{ "value": "never", "label": "Never" }, { "value": "rarely", "label": "Rarely" }, { "value": "sometimes", "label": "Sometimes" }, { "value": "often", "label": "Often" }, { "value": "very-often", "label": "Very Often" }] },
+            { "id": "q3", "text": "How often do you have problems remembering appointments or obligations?", "type": "single", "required": true, "options": [{ "value": "never", "label": "Never" }, { "value": "rarely", "label": "Rarely" }, { "value": "sometimes", "label": "Sometimes" }, { "value": "often", "label": "Often" }, { "value": "very-often", "label": "Very Often" }] },
+            { "id": "q4", "text": "When you have a task that requires a lot of thought, how often do you avoid or delay getting started?", "type": "single", "required": true, "options": [{ "value": "never", "label": "Never" }, { "value": "rarely", "label": "Rarely" }, { "value": "sometimes", "label": "Sometimes" }, { "value": "often", "label": "Often" }, { "value": "very-often", "label": "Very Often" }] },
+            { "id": "q5", "text": "How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?", "type": "single", "required": true, "options": [{ "value": "never", "label": "Never" }, { "value": "rarely", "label": "Rarely" }, { "value": "sometimes", "label": "Sometimes" }, { "value": "often", "label": "Often" }, { "value": "very-often", "label": "Very Often" }] },
+            { "id": "q6", "text": "How often do you feel overly active and compelled to do things, like you were driven by a motor?", "type": "single", "required": true, "options": [{ "value": "never", "label": "Never" }, { "value": "rarely", "label": "Rarely" }, { "value": "sometimes", "label": "Sometimes" }, { "value": "often", "label": "Often" }, { "value": "very-often", "label": "Very Often" }] }
+        ],
+        "scoring": {
+            "kind": "asrsLike",
+            "oftenCountIds": ["q1", "q2", "q3", "q4"],
+            "veryOftenCountIds": ["q5", "q6"],
+            "oftenValues": ["sometimes", "often", "very-often"],
+            "veryOftenValues": ["often", "very-often"],
+            "threshold": 4,
+            "maxScore": 6,
+            "positiveText": "Your score indicates that a GP chat about ADHD assessment is worth considering.",
+            "negativeText": "Your score suggests a GP chat right now might not be necessary. If symptoms affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "scoff",
+        "title": "SCOFF",
+        "description": "Brief eating disorder screen (Sick, Control, One stone, Fat, Food).",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "questions": [
+            { "id": "q1", "text": "Do you make yourself Sick because you feel uncomfortably full?", "type": "single", "required": true, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] },
+            { "id": "q2", "text": "Do you worry you have lost Control over how much you eat?", "type": "single", "required": true, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] },
+            { "id": "q3", "text": "Have you recently lost more than One stone (14 lb / 6.4 kg) in a 3-month period?", "type": "single", "required": true, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] },
+            { "id": "q4", "text": "Do you believe yourself to be Fat when others say you are too thin?", "type": "single", "required": true, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] },
+            { "id": "q5", "text": "Would you say that Food dominates your life?", "type": "single", "required": true, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": { "no": 0, "yes": 1 },
+            "threshold": 2,
+            "maxScore": 5,
+            "positiveText": "Your score indicates that a GP chat about eating and body image is worth considering.",
+            "negativeText": "Your score suggests a GP chat right now might not be necessary. If eating or body image affects daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "oci-4",
+        "title": "OCI-4",
+        "timeframe": "Over the last month",
+        "description": "Ultra-brief OCD screening scale (4 items from OCI-R).",
+        "disclaimer": "Screening only. Not a diagnosis.",
+        "sourceUrl": "https://iocdf.org/wp-content/uploads/2024/10/abramovitch_et_al_2021_the_oci-4.pdf",
+        "questions": [
+            { "id": "q1", "text": "I get upset if objects are not arranged properly.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Not at all" }, { "value": "1", "label": "A little" }, { "value": "2", "label": "Moderately" }, { "value": "3", "label": "A lot" }, { "value": "4", "label": "Extremely" }] },
+            { "id": "q2", "text": "I repeatedly check doors, windows, drawers, etc.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Not at all" }, { "value": "1", "label": "A little" }, { "value": "2", "label": "Moderately" }, { "value": "3", "label": "A lot" }, { "value": "4", "label": "Extremely" }] },
+            { "id": "q3", "text": "I sometimes have to wash or clean myself simply because I feel contaminated.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Not at all" }, { "value": "1", "label": "A little" }, { "value": "2", "label": "Moderately" }, { "value": "3", "label": "A lot" }, { "value": "4", "label": "Extremely" }] },
+            { "id": "q4", "text": "I frequently get nasty thoughts and have difficulty in getting rid of them.", "type": "single", "required": true, "options": [{ "value": "0", "label": "Not at all" }, { "value": "1", "label": "A little" }, { "value": "2", "label": "Moderately" }, { "value": "3", "label": "A lot" }, { "value": "4", "label": "Extremely" }] }
+        ],
+        "scoring": {
+            "kind": "sumLikert",
+            "scoreByValue": { "0": 0, "1": 1, "2": 2, "3": 3, "4": 4 },
+            "threshold": 5,
+            "maxScore": 16,
+            "positiveText": "Your score indicates that a GP chat about OCD assessment is worth considering.",
+            "negativeText": "Your score suggests a GP chat right now might not be necessary. If obsessions or compulsions affect daily life, a GP chat still makes sense."
+        }
+    },
+    {
+        "id": "c-ssrs",
+        "title": "C-SSRS (Columbia Suicide Severity Rating Scale)",
+        "description": "Brief screening for suicidal ideation and behavior. Some questions only appear depending on your answers.",
+        "disclaimer": "Screening only. Not a diagnosis. If you are in crisis, please reach out to a crisis line or emergency services.",
+        "flow": "branching",
+        "storeAnswers": false,
+        "sourceUrl": "https://cssrs.columbia.edu/",
+        "crisisResource": {
+            "label": "Get help now",
+            "line": "116 123 (Samaritans, 24/7) – NHS advice and more numbers",
+            "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/"
+        },
+        "questions": [
+            { "id": "q1", "text": "Have you wished you were dead or wished you could go to sleep and not wake up?", "type": "single", "required": true, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] },
+            { "id": "q2", "text": "Have you actually had any thoughts of killing yourself?", "type": "single", "required": true, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] },
+            { "id": "q3", "text": "Have you been thinking about how you might do this?", "type": "single", "required": true, "showWhen": { "questionId": "q2", "value": "yes" }, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] },
+            { "id": "q4", "text": "Have you had these thoughts and had some intention of acting on them?", "type": "single", "required": true, "showWhen": { "questionId": "q2", "value": "yes" }, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] },
+            { "id": "q5", "text": "Have you started to work out or worked out the details of how to kill yourself? Do you intend to carry out this plan?", "type": "single", "required": true, "showWhen": { "questionId": "q2", "value": "yes" }, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] },
+            { "id": "q6", "text": "Have you done anything, started to do anything, or prepared to do anything to end your life? (For example: collected pills, gotten a gun, given valuables away, written a note, or taken pills / held a gun / gone somewhere to attempt.)", "type": "single", "required": true, "options": [{ "value": "yes", "label": "Yes" }, { "value": "no", "label": "No" }] }
+        ],
+        "scoring": {
+            "kind": "triage",
+            "levels": [
+                { "level": "acute", "summary": "You indicated thoughts or actions about ending your life. Please reach out to a crisis line or emergency services now. You are not alone.", "details": ["Crisis support is available 24/7. Use the resource below."], "when": { "questionId": "q6", "values": ["yes"] } },
+                { "level": "high", "summary": "You indicated having a plan and intent. Please reach out to a crisis line or a mental health professional today.", "details": ["Support is available 24/7. Use the resource below."], "when": { "questionId": "q5", "values": ["yes"] } },
+                { "level": "moderate", "summary": "You indicated some intention to act on these thoughts. Speaking with a mental health professional or your GP soon is important.", "details": ["If at any point you feel in crisis, use the resource below."], "when": { "questionId": "q4", "values": ["yes"] } },
+                { "level": "low", "summary": "You indicated some thoughts about suicide. A chat with your GP or a mental health professional can help.", "details": ["If things get harder, reach out to the resource below."], "when": { "questionId": "q3", "values": ["yes"] } },
+                { "level": "low", "summary": "You indicated some thoughts about suicide. A chat with your GP or a mental health professional can help.", "details": ["If things get harder, reach out to the resource below."], "when": { "questionId": "q2", "values": ["yes"] } }
+            ],
+            "defaultLevel": { "level": "none", "summary": "You did not report current suicidal ideation or behavior.", "details": ["If that changes, reach out to a crisis line or your GP. The resource below is available 24/7."] },
+            "crisisLevels": ["acute", "high", "moderate"]
+        }
     }
 ]

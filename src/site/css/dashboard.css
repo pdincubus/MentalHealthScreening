@@ -34,6 +34,16 @@
     margin-block-end: var(--space-xs);
 }
 
+.dashboard-card__level {
+    display: inline-block;
+    margin-inline-start: var(--space-xs);
+    padding-inline: var(--space-2xs);
+    font-size: var(--fs-s);
+    font-weight: var(--fw-regular);
+    text-transform: capitalize;
+    opacity: 0.85;
+}
+
 .dashboard-card__summary {
     font-size: var(--fs);
     margin-block-end: var(--space-xs);

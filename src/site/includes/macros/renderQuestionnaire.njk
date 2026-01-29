@@ -11,7 +11,10 @@
         novalidate
     >
         {% for q in questionnaire.questions %}
-            <fieldset>
+            <fieldset
+                data-question-id="{{ q.id }}"
+                {% if q.showWhen %}data-show-when-question="{{ q.showWhen.questionId }}" data-show-when-value="{{ q.showWhen.value }}"{% endif %}
+            >
                 <legend>
                     {{ loop.index }}. {{ q.text }}
                 </legend>
@@ -25,7 +28,7 @@
                             id="{{ id }}"
                             name="q-{{ q.id }}"
                             value="{{ opt.value }}"
-                            {% if q.required != false %}required{% endif %}
+                            {% if questionnaire.flow != 'branching' and q.required != false %}required{% endif %}
                         >
 
                         <label for="{{ id }}">
